@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szyfrowanie i Deszyfrowanie</title>
+</head>
+<body>
+    <h1>Szyfrowanie i Deszyfrowanie</h1>
+    
+    <label for="textToEncrypt">Tekst do zaszyfrowania:</label>
+    <textarea id="textToEncrypt" rows="4" cols="50"></textarea><br>
+    <button onclick="encryptText()">Zaszyfruj</button><br>
+    <label for="encryptedText">Zaszyfrowany tekst:</label>
+    <textarea id="encryptedText" rows="4" cols="50" readonly></textarea><br><br>
+    
+    <label for="textToDecrypt">Tekst do odszyfrowania:</label>
+    <textarea id="textToDecrypt" rows="4" cols="50"></textarea><br>
+    <button onclick="decryptText()">Odszyfruj</button><br>
+    <label for="decryptedText">Odszyfrowany tekst:</label>
+    <textarea id="decryptedText" rows="4" cols="50" readonly></textarea><br><br>
+
+    <script src="encrypt.js"></script>
+    <script src="decrypt.js"></script>
+</body>
+</html>
