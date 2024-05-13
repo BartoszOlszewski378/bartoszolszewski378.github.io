@@ -3,24 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szyfrowanie i Deszyfrowanie</title>
+    <title>LOCALHOST | Szyfrowanie i Deszyfrowanie</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
 </head>
 <body>
     <h1>Szyfrowanie i Deszyfrowanie</h1>
+    <b><p style="color:#fc2020; font-family: Arial, Helvetica, sans-serif; font-size:6pt;">Aktualnie obsługiwane są wszystkie znaki alfabetu polskiego!</p></b>
+    <hr />
+    <label for="textToEncrypt">Tekst do zaszyfrowania:</label><br />
+    <textarea placeholder="Podaj tekst do zaszyfrowania" id="textToEncrypt" rows="4" cols="50"></textarea><br>
+    <button class="btnEncryptDecrypt" onclick="encryptText()">Zaszyfruj</button><br><br>
+
+    <label for="encryptedText">Zaszyfrowany tekst:</label><br />
+    <textarea id="encryptedText" rows="4" cols="50" readonly></textarea>
+    <br><br>
+
+    <hr />
+
+    <br>
     
-    <label for="textToEncrypt">Tekst do zaszyfrowania:</label>
-    <textarea id="textToEncrypt" rows="4" cols="50"></textarea><br>
-    <button onclick="encryptText()">Zaszyfruj</button><br>
-    <label for="encryptedText">Zaszyfrowany tekst:</label>
-    <textarea id="encryptedText" rows="4" cols="50" readonly></textarea><br><br>
-    
-    <label for="textToDecrypt">Tekst do odszyfrowania:</label>
-    <textarea id="textToDecrypt" rows="4" cols="50"></textarea><br>
-    <button onclick="decryptText()">Odszyfruj</button><br>
-    <label for="decryptedText">Odszyfrowany tekst:</label>
+    <label for="textToDecrypt">Tekst do odszyfrowania:</label><br />
+    <textarea placeholder="Podaj zaszyfrowany tekst" id="textToDecrypt" rows="4" cols="50"></textarea><br>
+    <button class="btnEncryptDecrypt" onclick="decryptText()">Odszyfruj</button><br><br>
+
+    <label for="decryptedText">Odszyfrowany tekst:</label><br />
     <textarea id="decryptedText" rows="4" cols="50" readonly></textarea><br><br>
+
+    <hr /> <br />
+
+    <button class="btnEncryptDecrypt" onclick="clearTextInputs()">Wyczyść wszystko</button><br>
+
 
     <script src="encrypt.js"></script>
     <script src="decrypt.js"></script>
+    <script src="clear.js"></script>
+    
+
 </body>
 </html>
